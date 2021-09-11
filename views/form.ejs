@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formstyle.css" type="text/css" />
+  </head>
+
+  <body>
+    <%-include('partials/header')%>
+    <div class="box">
+      <%=Variable%> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Amet qui, temporibus quia magni veritatis maxime nostrum quasi et, modi
+      asperiores dolorum, aliquid incidunt nam impedit quibusdam aperiam? Ipsum,
+      voluptatem aliquid?
+    </div>
+    <div class="feed">
+      <form action="/" name="feedForm" method="post" class="feed-form">
+        <input type="text" name="Name" placeholder="Name" id="" /><br />
+        <input type="email" name="Email" placeholder="Email-ID" id="" /><br />
+        <input
+          type="number"
+          name="Phone"
+          placeholder="Contact-Number"
+          id=""
+        /><br />
+        <textarea
+          name="Review"
+          id=""
+          placeholder="Write review"
+          cols="15"
+          rows="10"
+        ></textarea
+        ><br />
+        <button type="submit" id="form_btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
